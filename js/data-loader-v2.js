@@ -68,10 +68,8 @@ const DataLoader = {
         // Base activities for phase
         let activities = phaseActivities[phase] || ['noManagement'];
 
-        // Filter based on structure (only plenter activities need high complexity)
-        if (structureClass === 'low') {
-            activities = activities.filter(a => !['plenter_harvest', 'plenter_thinning'].includes(a));
-        }
+        // All activities available regardless of structure_class
+        // (removed incorrect filtering that blocked femel and plenter for low structure)
 
         return activities;
     },

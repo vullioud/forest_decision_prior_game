@@ -128,5 +128,27 @@ const Utils = {
     capitalize(str) {
         if (!str) return '';
         return str.charAt(0).toUpperCase() + str.slice(1);
+    },
+
+    /**
+     * Format profile option names for display
+     */
+    formatProfileOption(option) {
+        const labels = {
+            // Plenter profiles
+            'plenter_prod': 'Production (Spruce-oriented)',
+            'plenter_bio': 'Biodiversity (Uneven-aged)',
+            'plenter_co2': 'CO2 Storage (Beech-oriented)',
+            // Target DBH profiles
+            'production_standard': 'Production Standard (Conifer focus)',
+            'biodiversity_mix': 'Biodiversity Mix (Long rotation)',
+            'co2_storage': 'CO2 Storage (Central Europe)',
+            // Species profiles (existing)
+            'broadleaved': 'Broadleaved',
+            'conifers': 'Conifers',
+            'mixed': 'Mixed',
+            'no_profile': 'No Profile'
+        };
+        return labels[option] || this.capitalize(option.replace(/_/g, ' '));
     }
 };

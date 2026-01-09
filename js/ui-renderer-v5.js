@@ -331,7 +331,7 @@ const UIRenderer = {
                             <label class="radio-option">
                                 <input type="radio" name="${paramName}" value="${opt}"
                                        ${opt === defaultValue ? 'checked' : ''}>
-                                <span>${opt}</span>
+                                <span>${Utils.formatProfileOption(opt)}</span>
                             </label>
                         `).join('')}
                     </div>
@@ -347,7 +347,7 @@ const UIRenderer = {
                     <select id="param_${paramName}" class="profile-select">
                         ${meta.profiles.map(profile => `
                             <option value="${profile}" ${profile === defaultValue ? 'selected' : ''}>
-                                ${Utils.capitalize(profile)}
+                                ${Utils.formatProfileOption(profile)}
                             </option>
                         `).join('')}
                     </select>

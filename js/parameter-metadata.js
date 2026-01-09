@@ -175,9 +175,9 @@ const ParameterMetadata = {
         },
         plenterCurve: {
             type: 'discrete',
-            label: 'Plenter Curve',
-            description: 'Target diameter distribution curve',
-            options: ['exponential', 'rotated_sigmoid', 'q_factor']
+            label: 'Plenter Profile',
+            description: 'Target diameter distribution profile from model',
+            options: ['plenter_prod', 'plenter_bio', 'plenter_co2']
         }
     },
 
@@ -207,9 +207,9 @@ const ParameterMetadata = {
         },
         plenterCurve: {
             type: 'discrete',
-            label: 'Plenter Curve',
-            description: 'Target diameter distribution curve',
-            options: ['exponential', 'rotated_sigmoid', 'q_factor']
+            label: 'Plenter Profile',
+            description: 'Target diameter distribution profile from model',
+            options: ['plenter_prod', 'plenter_bio', 'plenter_co2']
         }
     },
 
@@ -363,9 +363,9 @@ const ParameterMetadata = {
         },
         dbhListProfile: {
             type: 'discrete',
-            label: 'DBH Distribution',
-            description: 'How to distribute target DBH across species',
-            options: ['uniform', 'species_specific', 'size_class']
+            label: 'Target DBH Profile',
+            description: 'Species-specific target DBH profile from model',
+            options: ['production_standard', 'biodiversity_mix', 'co2_storage']
         }
     },
 

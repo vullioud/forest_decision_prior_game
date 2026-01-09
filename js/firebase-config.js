@@ -10,16 +10,16 @@ const FirebaseStorage = {
      * NOTE: You need to add your Firebase config here
      */
     async init() {
-        // TODO: Replace with your Firebase config from Firebase Console
-        // Get this from: Firebase Console > Project Settings > Your Apps > Config
+        // Firebase configuration from Firebase Console
         const firebaseConfig = {
-            apiKey: "YOUR_API_KEY",
-            authDomain: "YOUR_PROJECT.firebaseapp.com",
-            databaseURL: "https://YOUR_PROJECT.firebaseio.com",
-            projectId: "YOUR_PROJECT_ID",
-            storageBucket: "YOUR_PROJECT.appspot.com",
-            messagingSenderId: "YOUR_SENDER_ID",
-            appId: "YOUR_APP_ID"
+            apiKey: "AIzaSyAQlpXVD1PGJLuF1uMwUrqj2naH0bjwWiI",
+            authDomain: "forest-prior-game.firebaseapp.com",
+            databaseURL: "https://forest-prior-game-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "forest-prior-game",
+            storageBucket: "forest-prior-game.firebasestorage.app",
+            messagingSenderId: "944426769960",
+            appId: "1:944426769960:web:ba59b7dbfcc24237eedf1d",
+            measurementId: "G-3W263CKJWC"
         };
 
         try {

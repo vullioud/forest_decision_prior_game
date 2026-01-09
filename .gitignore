@@ -1,0 +1,36 @@
+# Archive folder (old versions, not needed for deployment)
+archive/
+
+# Local development files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files (if you add any secrets)
+.env
+.env.local
+
+# Firebase config with actual keys (template is OK to commit)
+# Uncomment this if you add your real Firebase keys
+# js/firebase-config.js
+
+# Temporary files
+*.tmp
+*.temp
+
+# Node modules (if you ever add npm)
+node_modules/
+
+# Build outputs (not applicable now, but good to have)
+dist/
+build/

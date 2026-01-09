@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Manager Decision Study</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Dynamic content will be inserted here -->
+        <div id="loading">
+            <h2>Loading Forest Decision Study...</h2>
+            <p>Preparing your forest portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Firebase SDK (Optional - for cloud storage) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+
+    <!-- Load game modules (V5 - with Save/Resume) -->
+    <script src="js/utils.js"></script>
+    <script src="js/distributions.js"></script>
+    <script src="js/parameter-metadata.js"></script>
+    <script src="js/coverage-tracker.js"></script>
+    <script src="js/session-manager.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/data-loader-v2.js"></script>
+    <script src="js/activity-selector.js"></script>
+    <script src="js/ui-renderer-v5.js"></script>
+    <script src="js/game-engine-v4.js"></script>
+    <script src="js/export.js"></script>
+
+    <!-- Initialize game -->
+    <script>
+        // Start the game when page loads
+        window.addEventListener('DOMContentLoaded', () => {
+            GameEngine.init();
+        });
+    </script>
+</body>
+</html>
